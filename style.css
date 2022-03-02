@@ -38,6 +38,10 @@ li {
     text-align: center;
 }
 
+.span {
+    color: var(--primary-color);
+}
+
 .btn:hover {
     background: var(--primary-alt);
 }
@@ -123,19 +127,16 @@ nav {
 }
 
 .hero__container .hero__content {
-    margin-top: 10rem;
+    margin-top: 7rem;
+    width: 90%;
 }
 
 .hero__container .hero__content h1 {
     font-weight: 800;
-    font-size: 55px;
-    line-height: 72.5px;
+    font-size: 50px;
+    line-height: 70px;
     color: var(--black-color);
     margin-bottom: 4px;
-}
-
-.hero__container .hero__content h1 span {
-    color: var(--primary-color);
 }
 
 .hero__container .hero__content p {
@@ -148,7 +149,7 @@ nav {
 
 .hero__img {
     width: 100%;
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 
 .hero__img img {
@@ -508,19 +509,20 @@ nav {
 
 /* Explore */
 #explore {
-    padding: 4rem 0;
+    padding: 2rem 0;
     background: var(--secondary-color);
 }
 
 .explore__container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 4rem 0;
+    justify-content: space-between;
+    padding: 2rem 0;
 }
 
 .explore__content {
-    width: 50%;
+    /* width: 60%; */
+    margin-top: 3rem;
 }
 
 .explore__content h2 {
@@ -540,24 +542,53 @@ nav {
     margin-bottom: 30px;
 }
 
-.img-bg {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    background: var(--primary-color);
-
-    position: relative;
-    right: -25px;
-    bottom: -76px;
+.explore__content-img {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.explore__content-img img {
-    position: absolute;
-    top: 2000px;
-    right: 140px;
-    z-index: 10;
+.explore__content-img img{
+    margin-top: 3rem;
+    width: 100%;
+}
 
-    width: 450px;
-    height: auto;
-    margin-top: 2rem;
+@media screen and (max-width: 920px){
+    #explore {
+        padding: .5rem 0;
+    }
+    
+    .explore__container {
+        padding: 1rem 0;
+    }
+    
+    .explore__content {
+        /* width: 60%; */
+        margin-top: 1rem;
+    }
+    
+    .explore__content h2 {
+        margin-top: 4rem;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .explore__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .explore__content h2 {
+        margin-top: .5rem;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .explore__content p {
+        width: 100%;
+    }
 }
