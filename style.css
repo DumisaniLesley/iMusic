@@ -592,3 +592,138 @@ nav {
         width: 100%;
     }
 }
+
+
+/* Testimonial */
+#testimonial {
+    background: #FAFAFA;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.testimonial__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial__content-heading h5 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.testimonial__content-heading h2 {
+    width: 541px;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: -0.5px;
+    margin-top: 0px;
+}
+
+.testimonial__content-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card-wrapper {
+    width: 80%;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.card-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.card-header-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.card-header-info h5 {
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.rating svg {
+    width: 1rem;
+    margin-top: 2px;
+    color: #FFC806;
+}
+
+.card-body p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+.sliders {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.slide {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 .3rem;
+    background: #FAFAFA;
+    border: 2px solid #001AFF;
+    cursor: pointer;
+}
+
+.active-slide {
+    background: #001AFF;
+    border: 2px solid #001AFF;
+}
+
+@media screen and (max-width: 550px){
+    .testimonial__content-heading h5 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .testimonial__content-heading h2 {
+        width: 90%;
+        font-size:35px;
+        line-height: 45px;
+    }
+    .testimonial__content-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .card-wrapper {
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .slide {
+        display: none;
+    }
+}
