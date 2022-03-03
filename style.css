@@ -924,37 +924,20 @@ nav {
 .links-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .support ul {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
+@media screen and (max-width: 550px){
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-/* swipper js */
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-
-.swiper-wrapper {
-    width: 100%;
-    height: auto;
-    margin-bottom: 3rem;
-}
-
-.swiper-slide {
-    width: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: rgb(255, 0, 0);
-    padding: 20px;
-    border-radius: 5px;
+    
 }
