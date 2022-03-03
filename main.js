@@ -4,7 +4,6 @@ const Links = document.getElementById('links');
 
 Menu.addEventListener('click', () => {
     Links.classList.toggle('open');
+    
 });
-
-
 
