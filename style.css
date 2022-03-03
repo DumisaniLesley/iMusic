@@ -114,6 +114,26 @@ nav {
     .navbar-links {
         display: none;
     }
+
+    .navbar-links a {
+        margin-top: 10px;
+        margin-left: 450px;
+    }
+
+    .navbar-links .btn {
+        display: none;
+    }
+
+    .navbar-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+    }
     
 }
 
